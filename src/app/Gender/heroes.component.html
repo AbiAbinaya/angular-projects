@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{hero.name}} is {{hero.age}} years old -
+    <img *ngIf="hero.gender === 'male'" [src]="male" class="icon" alt="male">
+    <img *ngIf="hero.gender === 'female'" [src]="female" class="icon" alt="female">
+  </li>
+</ul>

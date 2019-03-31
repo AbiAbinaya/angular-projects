@@ -1,0 +1,36 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of firstEditor" [class.selected]="hero === selectedHero" (click)= "OnSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<h4>
+<!-- <div>
+    There are two components loaded here First-editor and heroes.
+    First component loads the title of the first-editor.
+</div>
+</h4>
+
+<h2>{{title}}</h2>
+
+<h4>Second displays the name and id of the first-editor</h4>
+<h2>{{firstEditor.name}} Details</h2>
+
+<h1>Displays the first-editor using div and span</h1>
+<div><span>id: </span>{{firstEditor.id}}</div>
+<div><span>name: </span>{{firstEditor.name}}</div>
+
+<h4>Displays the name in upper case.</h4>
+<h2>{{firstEditor.name | uppercase}} Details</h2>
+
+<h4>Implements the two way data binding for the property name</h4>
+<div>
+    <label>name:
+      <input [(ngModel)]="firstEditor.name" placeholder="name">
+    </label>
+</div>
+
+<h4>Loads the heros component</h4> -->
+
+<!-- <app-heroes></app-heroes> -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
